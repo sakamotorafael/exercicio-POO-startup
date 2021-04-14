@@ -9,6 +9,8 @@ public class Pix extends Transacao {
 
     public Pix(Conta conta, double valor, String data, String pix) {
         super(conta, valor, data);
-        this.pix = pix;
+        if(pix != conta.getPix()) {
+            this.pix = pix;
+        }
     }
 }

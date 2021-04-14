@@ -8,7 +8,7 @@ public class TransfEntreContas extends Transacao {
     }
 
     public TransfEntreContas(int id, Conta conta, double valor, String data, Conta contaTerceiro) {
-        super(id, conta, valor, data);
+        super(conta, valor, data);
         if(contaTerceiro.getId() != super.getConta().getId()) {
             this.contaTerceiro = contaTerceiro;
         }

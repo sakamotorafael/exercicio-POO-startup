@@ -7,8 +7,8 @@ public class Pix extends Transacao {
         return pix;
     }
 
-    public Pix(int id, Conta conta, double valor, String data, String pix) {
-        super(id, conta, valor, data);
+    public Pix(Conta conta, double valor, String data, String pix) {
+        super(conta, valor, data);
         this.pix = pix;
     }
 }

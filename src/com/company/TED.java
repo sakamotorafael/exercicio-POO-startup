@@ -11,24 +11,24 @@ public class TED extends Transacao{
         return banco;
     }
 
-    public java.lang.String getAgencia() {
+    public String getAgencia() {
         return agencia;
     }
 
-    public java.lang.String getContaCorrente() {
+    public String getContaCorrente() {
         return contaCorrente;
     }
 
-    public java.lang.String getNome() {
+    public String getNome() {
         return nome;
     }
 
-    public java.lang.String getCpf() {
+    public String getCpf() {
         return cpf;
     }
 
-    public TED(int id, Conta conta, double valor, String data, int banco, String agencia, String contaCorrente, String nome, String cpf) {
-        super(id, conta, valor, data);
+    public TED( Conta conta, double valor, String data, int banco, String agencia, String contaCorrente, String nome, String cpf) {
+        super(conta, valor, data);
         this.banco = banco;
         this.agencia = agencia;
         this.contaCorrente = contaCorrente;
